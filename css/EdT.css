@@ -57,11 +57,14 @@ div.panel {
   .no-print {
     display: none;
   }
+  *{
+    
+  }
 }
 
 table.edt {
   /* border-collapse: collapse; */
-  border: 1px solid black;
+  border: none;
   /* width: 100%; */
   /* margin: 0 1cm; */
   margin: 0 auto 100px auto;
@@ -70,8 +73,9 @@ table.edt {
 
 table.edt th,
 table.edt td {
-  border: 2px solid black;
+  border: 3px solid rgb(171, 191, 211);
   padding: 3px 5px;
+  border-radius: 0.5em;
 }
 
 table.edt th.week {
@@ -256,4 +260,9 @@ table.edt td[class|="Slot"] tr:first-child + tr td + td {
 table.edt th.empty {
   border: none;
   background-color: white;
+}
+
+table.edt th{
+  background-color: rgba(87, 162, 215, 0.854);
+  color: #413831;
 }
