@@ -1,0 +1,201 @@
+body.status-warning {
+    background-color: lightgrey;
+    background-image: url('../img/not-processed.png');
+}
+
+body.status-error {
+    background-color: lightsalmon;
+    background-image: url('../img/not-processed.png');
+}
+
+
+h1 {
+    font-variant: small-caps;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
+    z-index: 1;
+}
+
+h2 {
+    text-align: center;
+}
+
+h2 a.nav-link {
+    color: indigo;
+    text-decoration: none;
+}
+
+h2 a.discrete-link {
+    color: black;
+    text-decoration: underline dotted black;
+}
+
+div.panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 2px;
+    z-index: 1;
+}
+
+@media print {
+    h1 { display: none; }
+    /* h2 { display: none; } */
+    h2 a.nav-link { display: none; }
+    h2 a.discrete-link { text-decoration: none; }
+    table.edt { page-break-after: always; }
+    .no-print { display: none; }
+}
+
+table.edt {
+    border-collapse: collapse;
+    border: 1px solid black;
+    /*width: 100%;*/
+    /*margin: 0 1cm;*/
+    /* margin: 100px auto 100px auto; */
+    background-color: white;
+}
+
+table.edt th, table.edt td {
+    border: 1px solid black;
+    padding: 0 5px;
+}
+
+table.edt th.week {
+    /* text-align: left */
+}
+
+table.edt th.week-group {
+    width: 60px;
+}
+
+table.edt th.week-separator {
+    width: 0px;
+    padding: 0 1px;
+}
+
+table.edt th.week-separator.vacation {
+    width: 0px;
+    padding: 0 10px;
+    background: lightgrey url("../img/not-processed.png");
+}
+
+table.edt td {
+    text-align: center;
+}
+
+table.edt td.selected {
+    text-align: center;
+    border: 4px dotted red;
+}
+
+table.edt td.NOSLOT { background-color: #F6F6F6; font-style: italic; } 
+
+table.edt td.END {
+    background: lightgrey url("../img/not-processed.png");
+}
+
+table.edt td.cm {
+    font-weight: bold;
+}
+
+table.edt tr.header {
+    height: 20px;
+}
+
+table.edt tr.day-separator {
+    height: 10px;
+}
+
+table.edt tr.day-group-separator {
+    height: 5px;
+}
+
+table.edt tr.hour {
+    height: 40px;
+}
+
+td.spot {
+    /* background-color: white; */
+}
+
+td.unspot {
+    background-color: white;
+}
+
+div.title {
+    font-size: medium;
+    display: inline;
+}
+
+div.teacher, a.teacher {
+    font-size: small;
+    font-weight: normal;
+    font-style: italic;
+    color: inherit;
+    text-decoration: inherit;
+}
+
+div.room {
+    font-size: xx-small;
+    font-weight: normal;
+    /*float: right;*/
+    /*display: block;*/
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0;
+    text-align: right;
+}
+
+table.container {
+    width: 100%;
+    border-collapse: collapse;
+    /* border: 1px solid black; */
+    border: 0;
+}
+
+table.container td {
+    /* border: 1px solid black; */
+    border: 0;
+}
+
+div.container {
+    position: relative;
+    height: 100%;
+    /*padding-bottom: 10px;*/
+}
+
+div.inner-container {
+    /*margin: auto;*/
+    /*vertical-align: middle;*/
+}
+
+div.action-panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 400px;
+    border: 3px solid #8AC007;
+    background: white;
+    z-index: 1;
+}
+
+div.filter-panel {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 400px;
+    border: 3px solid #8AC007;
+    background: white;
+    z-index: 1;
+}
+
+span.checkbox-set-label {
+    font-weight: bold;
+    text-decoration: underline red dotted;
+    cursor: copy;
+}
