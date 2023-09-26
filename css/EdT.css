@@ -60,7 +60,7 @@ div.panel {
 }
 
 table.edt {
-  border-collapse: collapse;
+  /* border-collapse: collapse; */
   border: 1px solid black;
   /*width: 100%;*/
   /*margin: 0 1cm;*/
@@ -71,7 +71,7 @@ table.edt {
 table.edt th,
 table.edt td {
   border: 1px solid black;
-  padding: 0 5px;
+  padding: 10px 5px;
 }
 
 table.edt th.week {
@@ -212,4 +212,29 @@ span.checkbox-set-label {
   font-weight: bold;
   text-decoration: underline red dotted;
   cursor: copy;
+}
+
+.Slot-CM {
+  background-color: palegoldenrod;
+}
+
+.Slot-TD {
+  background-color: skyblue;
+}
+
+.Slot-TP {
+  background-color: pink;
+}
+
+.Slot-EDT {
+  background-color: thistle;
+}
+
+.Slot-EV {
+  background-color: tomato;
+}
+
+table.edt td[class|="Slot"] {
+  
+  border-radius: 1em;
 }
