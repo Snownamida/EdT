@@ -62,16 +62,16 @@ div.panel {
 table.edt {
   /* border-collapse: collapse; */
   border: 1px solid black;
-  /*width: 100%;*/
-  /*margin: 0 1cm;*/
-  /* margin: 100px auto 100px auto; */
-  background-color: white;
+  /* width: 100%; */
+  /* margin: 0 1cm; */
+  margin: 0 auto 100px auto;
+  background-color: aliceblue;
 }
 
 table.edt th,
 table.edt td {
-  border: 1px solid black;
-  padding: 10px 5px;
+  border: 2px solid black;
+  padding: 3px 5px;
 }
 
 table.edt th.week {
@@ -83,8 +83,9 @@ table.edt th.week-group {
 }
 
 table.edt th.week-separator {
-  width: 0px;
-  padding: 0 1px;
+  width: 3px;
+  border: none;
+  background-color: white;
 }
 
 table.edt th.week-separator.vacation {
@@ -103,8 +104,8 @@ table.edt td.selected {
 }
 
 table.edt td.NOSLOT {
-  background-color: #f6f6f6;
   font-style: italic;
+  border: none;
 }
 
 table.edt td.END {
@@ -214,27 +215,45 @@ span.checkbox-set-label {
   cursor: copy;
 }
 
-.Slot-CM {
+table.edt .Slot-CM {
   background-color: palegoldenrod;
+  border-color: rgb(218, 212, 142);
 }
 
-.Slot-TD {
+table.edt .Slot-TD {
   background-color: skyblue;
+  border-color: rgb(116, 179, 204);
 }
 
-.Slot-TP {
+table.edt .Slot-TP {
   background-color: pink;
+  border-color: rgb(213, 149, 160);
 }
 
-.Slot-EDT {
+table.edt .Slot-EDT {
   background-color: thistle;
+  border-color: rgb(179, 150, 179);
 }
 
-.Slot-EV {
+table.edt .Slot-EV {
   background-color: tomato;
 }
 
 table.edt td[class|="Slot"] {
-  
   border-radius: 1em;
+  border-width: 5px;
+}
+
+table.edt td[class|="Slot"] tr:first-child {
+  font-size: large;
+  font-weight: bold;
+}
+
+table.edt td[class|="Slot"] tr:first-child + tr td + td {
+  font-style: italic;
+}
+
+table.edt th.empty {
+  border: none;
+  background-color: white;
 }
