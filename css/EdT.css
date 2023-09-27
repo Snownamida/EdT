@@ -57,8 +57,8 @@ div.panel {
   .no-print {
     display: none;
   }
-  *{
-    
+  * {
+    -webkit-print-color-adjust: exact;
   }
 }
 
@@ -262,7 +262,7 @@ table.edt th.empty {
   background-color: white;
 }
 
-table.edt th{
+table.edt th {
   background-color: rgba(87, 162, 215, 0.854);
   color: #413831;
 }
