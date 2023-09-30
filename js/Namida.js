@@ -6,8 +6,3 @@ for (let h2 of h2s) {
   );
 }
 
-fetch("https://servif.insa-lyon.fr/EdT/3IF").then(response => {
-  console.log('response咯');
-  console.log(response);
-  console.log('response辽');
-});
