@@ -35,7 +35,7 @@ visit_login_web()
     return reponse.text();
   })
   .then(html => {
-    console.log(html);
+    fs.writeFileSync("EdT/3IF.html", html);
   });
 
 function visit_edt(PHPSESSID) {
