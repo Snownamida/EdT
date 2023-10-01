@@ -39,12 +39,7 @@ table.edt td {
   border-radius: 0.5em;
 }
 
-table.edt th.week-group {
-  width: 60px;
-}
-
 table.edt th.week-separator {
-  width: 3px;
   border: none;
   background-color: white;
 }
