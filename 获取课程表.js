@@ -35,6 +35,13 @@ visit_login_web()
     return reponse.text();
   })
   .then(html => {
+    let edt_web_document = new JSDOM(html).window.document;
+    edt_web_document.querySelector("body").insertAdjacentHTML(
+      "beforeend",
+      `
+    <script src="../js/Namida.js"></script>`
+    );
+    html = `<!DOCTYPE html>` + edt_web_document.documentElement.outerHTML;
     fs.writeFileSync("EdT/3IF.html", html);
   });
 
