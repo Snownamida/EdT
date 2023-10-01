@@ -43,6 +43,10 @@ visit_login_web()
     );
     html = `<!DOCTYPE html>` + edt_web_document.documentElement.outerHTML;
     fs.writeFileSync("EdT/3IF.html", html);
+    fs.writeFileSync(
+      "json/fetchtime.json",
+      JSON.stringify(new Date().getTime())
+    );
   });
 
 function visit_edt(PHPSESSID) {
