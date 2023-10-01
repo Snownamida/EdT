@@ -1,2 +1,2 @@
-node fetchEdT.js >> 鏇存柊璇捐〃.log && git add . >> 鏇存柊璇捐〃.log&& git commit -m "鑷姩鏇存柊璇捐〃" >> 鏇存柊璇捐〃.log && git push >> 鏇存柊璇捐〃.log
+node fetchEdT.js >> 更新课表.log && git add . >> 更新课表.log&& git commit -m "自动更新课表" >> 更新课表.log && git push >> 更新课表.log
 pause
