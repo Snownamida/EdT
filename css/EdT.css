@@ -48,10 +48,6 @@ table.edt th.week-separator {
   background-color: white;
 }
 
-table.edt td.selected {
-  border: 4px dotted red;
-}
-
 table.edt td.NOSLOT {
   border: none;
 }
@@ -72,12 +68,8 @@ table.edt tr.hour {
   height: 40px;
 }
 
-table.container {
-  width: 100%;
-}
-
 table.container td {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   border: 0;
 }
 
