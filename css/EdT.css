@@ -25,21 +25,6 @@ div.panel {
   z-index: 1;
 }
 
-@media print {
-  h2 a.nav-link {
-    display: none;
-  }
-  table.edt {
-    page-break-after: always;
-  }
-  .no-print {
-    display: none;
-  }
-  * {
-    -webkit-print-color-adjust: exact;
-  }
-}
-
 table.edt {
   margin: 0 auto 100px auto;
   background-color: aliceblue;
@@ -142,4 +127,19 @@ table.edt th.empty {
 table.edt th {
   background-color: rgba(87, 162, 215, 0.854);
   color: #413831;
+}
+
+@media print {
+  h2 a.nav-link {
+    display: none;
+  }
+  table.edt {
+    page-break-after: always;
+  }
+  .no-print {
+    display: none;
+  }
+  * {
+    -webkit-print-color-adjust: exact;
+  }
 }
