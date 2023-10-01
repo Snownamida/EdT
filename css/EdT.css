@@ -1,23 +1,3 @@
-body.status-warning {
-  background-color: lightgrey;
-  background-image: url("../img/not-processed.png");
-}
-
-body.status-error {
-  background-color: lightsalmon;
-  background-image: url("../img/not-processed.png");
-}
-
-h1 {
-  font-variant: small-caps;
-  text-align: center;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: white;
-  z-index: 1;
-}
-
 h2 {
   text-align: center;
 }
@@ -29,7 +9,12 @@ h2 a.nav-link {
 
 h2 a.discrete-link {
   color: black;
-  text-decoration: underline dotted black;
+  text-decoration: none;
+}
+
+h2 a.discrete-link:hover {
+  color: rebeccapurple;
+  text-decoration: none;
 }
 
 div.panel {
@@ -41,15 +26,8 @@ div.panel {
 }
 
 @media print {
-  h1 {
-    display: none;
-  }
-  /* h2 { display: none; } */
   h2 a.nav-link {
     display: none;
-  }
-  h2 a.discrete-link {
-    text-decoration: none;
   }
   table.edt {
     page-break-after: always;
@@ -63,12 +41,9 @@ div.panel {
 }
 
 table.edt {
-  /* border-collapse: collapse; */
-  border: none;
-  /* width: 100%; */
-  /* margin: 0 1cm; */
   margin: 0 auto 100px auto;
   background-color: aliceblue;
+  text-align: center;
 }
 
 table.edt th,
@@ -76,10 +51,6 @@ table.edt td {
   border: 3px solid rgb(171, 191, 211);
   padding: 3px 5px;
   border-radius: 0.5em;
-}
-
-table.edt th.week {
-  /* text-align: left */
 }
 
 table.edt th.week-group {
@@ -92,36 +63,16 @@ table.edt th.week-separator {
   background-color: white;
 }
 
-table.edt th.week-separator.vacation {
-  width: 0px;
-  padding: 0 10px;
-  background: lightgrey url("../img/not-processed.png");
-}
-
-table.edt td {
-  text-align: center;
-}
-
 table.edt td.selected {
-  text-align: center;
   border: 4px dotted red;
 }
 
 table.edt td.NOSLOT {
-  font-style: italic;
   border: none;
 }
 
-table.edt td.END {
-  background: lightgrey url("../img/not-processed.png");
-}
-
-table.edt td.cm {
-  font-weight: bold;
-}
-
 table.edt tr.header {
-  height: 20px;
+  height: 10px;
 }
 
 table.edt tr.day-separator {
@@ -136,87 +87,13 @@ table.edt tr.hour {
   height: 40px;
 }
 
-td.spot {
-  /* background-color: white; */
-}
-
-td.unspot {
-  background-color: white;
-}
-
-div.title {
-  font-size: medium;
-  display: inline;
-}
-
-div.teacher,
-a.teacher {
-  font-size: small;
-  font-weight: normal;
-  font-style: italic;
-  color: inherit;
-  text-decoration: inherit;
-}
-
-div.room {
-  font-size: xx-small;
-  font-weight: normal;
-  /*float: right;*/
-  /*display: block;*/
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  padding: 0;
-  text-align: right;
-}
-
 table.container {
   width: 100%;
-  border-collapse: collapse;
-  /* border: 1px solid black; */
-  border: 0;
 }
 
 table.container td {
-  /* border: 1px solid black; */
+  border: 1px solid black;
   border: 0;
-}
-
-div.container {
-  position: relative;
-  height: 100%;
-  /*padding-bottom: 10px;*/
-}
-
-div.inner-container {
-  /*margin: auto;*/
-  /*vertical-align: middle;*/
-}
-
-div.action-panel {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 400px;
-  border: 3px solid #8ac007;
-  background: white;
-  z-index: 1;
-}
-
-div.filter-panel {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 400px;
-  border: 3px solid #8ac007;
-  background: white;
-  z-index: 1;
-}
-
-span.checkbox-set-label {
-  font-weight: bold;
-  text-decoration: underline red dotted;
-  cursor: copy;
 }
 
 table.edt .Slot-CM {
